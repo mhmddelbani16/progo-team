@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="restohome.css">
+    <script src="login.js"></script>
+    <title>login</title>
+</head>
+
+<body>
+
+    <div class="first">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">log In</button>
+                <button type="button" class="toggle-btn" onclick="reg()">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/">
+                    <img src="images/1.png">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="images/2.png">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="images/3.png">
+                </a>
+            </div>
+
+            <form class="input-group" id="log">
+                <input type="text" class="input-field" id="userin" placeholder="User Id" required>
+                <input type="password" class="input-field" id="passin" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="button" class="sumbit-btn" onclick="checkData()">Log in</button>
+            </form>
+
+            <form class="input-group" id="Reg">
+                <input type="text" class="input-field" id="email" placeholder="User Id" required>
+                <input type="password" class="input-field" id="pwd" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and services</span>
+                <button type="button" class="sumbit-btn" onclick="addData()">Register</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script>
+    var x = document.getElementById("log");
+    var y = document.getElementById("Reg");
+    var z = document.getElementById("btn");
+    function reg() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+
+    }
+    function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "110px";
+    }
+
+</script>
+
+</html>

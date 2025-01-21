@@ -1,0 +1,14 @@
+.shop-item-image {
+    width: 55px; 
+    height: 45px; 
+    border-radius: 100%; 
+    border: 1px solid #48c5f7;
+}
+.content-section {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: flex-start; /* Align items at the top of the container */
+    align-items: stretch; /* Stretch items to match container's width */
+    gap: 10px; /* Add spacing between child elements */
+    padding: 10px; /* Optional: Add some inner spacing for the container */
+}
